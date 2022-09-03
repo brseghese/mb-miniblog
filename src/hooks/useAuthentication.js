@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { db } from "../firebase/config";
 
 import {
