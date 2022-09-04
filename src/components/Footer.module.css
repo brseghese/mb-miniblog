@@ -1,8 +1,13 @@
 .footer {
-  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #edf3f6;
+  background-color: #111;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 1em;
+  padding: 20px;
 }
