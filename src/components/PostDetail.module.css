@@ -1,5 +1,5 @@
 .post_detail {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .post_detail img {
@@ -7,16 +7,18 @@
 }
 
 .post_detail h2 {
-  margin-bottom: 0.4em;
+  margin-top: 0.5em;
 }
 
 .post_detail .tags {
-  margin-bottom: 1.2em;
+  margin-top: 0;
   display: flex;
 }
 
 .tags p {
+  margin-top: 0;
   margin-right: 0.5em;
+  margin-bottom: 2em;
 }
 
 .tags span {
@@ -27,7 +29,7 @@
   font-style: italic;
   color: #222;
   font-size: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 
 .createdBy span {
