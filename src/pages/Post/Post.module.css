@@ -1,0 +1,17 @@
+.post_container {
+  text-align: center;
+}
+
+.post_container .tags {
+  display: flex;
+  justify-content: center;
+}
+
+.tags p {
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+.tags span {
+  font-weight: bold;
+}
