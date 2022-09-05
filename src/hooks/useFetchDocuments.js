@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { db } from "../firebase/config";
 import {
   collection,
@@ -6,8 +7,6 @@ import {
   onSnapshot,
   where,
 } from "firebase/firestore";
-
-import { useState, useEffect } from "react";
 
 export const useFetchDocuments = (docCollection, search = null, uid = null) => {
   const [documents, setDocuments] = useState(null);
@@ -19,7 +18,9 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
 
   useEffect(() => {
     async function loadData() {
-      if (cancelled) return;
+      if (cancelled) {
+        return;
+      }
 
       setLoading(true);
 
@@ -34,6 +35,12 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
             where("tagsArray", "array-contains", search),
             orderBy("createdAt", "desc")
           );
+        } else if (uid) {
+          q = await query(
+            collectionRef,
+            where("uid", "==", uid),
+            orderBy("createdAt", "desc")
+          );
         } else {
           q = await query(collectionRef, orderBy("createdAt", "desc"));
         }
@@ -46,18 +53,18 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
             }))
           );
         });
-
-        setLoading(false);
       } catch (error) {
         console.log(error);
         setError(error.message);
-
-        setLoading(false);
       }
+
+      setLoading(false);
     }
 
     loadData();
-  }, [docCollection, documents, search, uid, cancelled]);
+  }, [docCollection, search, uid, cancelled]);
+
+  console.log(documents);
 
   useEffect(() => {
     return () => setCancelled(true);
