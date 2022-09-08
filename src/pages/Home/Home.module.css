@@ -19,7 +19,8 @@
 }
 
 .noposts p {
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5rem;
+  color: #444;
 }
 
 .noposts a {

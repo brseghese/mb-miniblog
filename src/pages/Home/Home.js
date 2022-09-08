@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <div className="container mainContainer">
-      <h2>Feed de Posts - Veja os posts mais recentes...</h2>
+      <h2>Feed de posts mais recentes...</h2>
       <form onSubmit={handleSubmit} className={styles.search_form}>
         <input
           type="text"

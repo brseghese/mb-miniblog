@@ -11,8 +11,8 @@
 }
 
 .dashboard p {
-  color: #aaa;
-  margin-bottom: 1em;
+  color: #444;
+  margin-bottom: 1rem;
 }
 
 .noposts {
@@ -20,7 +20,7 @@
 }
 
 .noposts p {
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5rem;
 }
 
 .noposts a {

@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #222;
+  border: 1px solid #1a8918;
   cursor: pointer;
 }
 
@@ -69,8 +69,8 @@
   width: 1.2rem;
   height: 2px;
   border-radius: 2px;
-  background: #222;
-  box-shadow: 0 8px #222, 0 -8px #222;
+  background: #1a8918;
+  box-shadow: 0 8px #1a8918, 0 -8px #1a8918;
   transition: 0.3s;
 }
 
@@ -87,14 +87,20 @@
   top: 64px;
   list-style: none;
   right: 0px;
-  padding: 0.5rem 1rem;
-  background: #fff;
+  padding: 0.5rem 0.5rem;
+  background: #222;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .menuMobile li a,
 .menuMobile button {
   padding: 10px;
+  color: #1a8918;
+}
+
+.menuMobile li a:hover,
+.menuMobile button:hover {
+  font-weight: 900;
 }
 
 .menuMobile li {

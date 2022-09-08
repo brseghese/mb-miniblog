@@ -12,7 +12,7 @@ const Navbar = () => {
   const { user } = useAuthValue();
   const { logout } = useAuthentication();
 
-  const mobile = useMedia("(max-width: 728px)");
+  const mobile = useMedia("(max-width: 760px)");
 
   const [mobileMenu, setMobileMenu] = useState(false);
 
