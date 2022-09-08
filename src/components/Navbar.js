@@ -5,80 +5,108 @@ import { NavLink } from "react-router-dom";
 import { useAuthentication } from "../hooks/useAuthentication";
 
 import { useAuthValue } from "../context/AuthContext";
+import { useState } from "react";
+import useMedia from "../hooks/useMedia";
 
 const Navbar = () => {
   const { user } = useAuthValue();
   const { logout } = useAuthentication();
 
+  const mobile = useMedia("(max-width: 728px)");
+
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   return (
-    <nav className={styles.navbar}>
-      <NavLink to="/" className={styles.brand}>
-        <span>Blog</span>
-      </NavLink>
-      <ul className={styles.links_list}>
-        <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? styles.active : "")}
-          >
-            Home
-          </NavLink>
-        </li>
-        {!user && (
-          <>
-            <li>
-              <NavLink
-                to="/login"
-                className={({ isActive }) => (isActive ? styles.active : "")}
-              >
-                Entrar
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/register"
-                className={({ isActive }) => (isActive ? styles.active : "")}
-              >
-                Cadastrar
-              </NavLink>
-            </li>
-          </>
+    <header className={styles.header}>
+      <nav className={styles.menu}>
+        <NavLink to="/" className={styles.brand}>
+          <span>Blog</span>
+        </NavLink>
+        {mobile && (
+          <button
+            onClick={() => setMobileMenu(!mobileMenu)}
+            className={`${styles.mobileButton} ${
+              mobileMenu && styles.mobileButtonActive
+            }`}
+          ></button>
         )}
-        {user && (
-          <>
-            <li>
-              <NavLink
-                to="/posts/create"
-                className={({ isActive }) => (isActive ? styles.active : "")}
-              >
-                Novo post
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/dashboard"
-                className={({ isActive }) => (isActive ? styles.active : "")}
-              >
-                Dashboard
-              </NavLink>
-            </li>
-          </>
-        )}
-        <li>
-          <NavLink
-            to="/about"
-            className={({ isActive }) => (isActive ? styles.active : "")}
-          >
-            Sobre
-          </NavLink>
-        </li>
-        {user && (
+        <ul
+          className={`${mobile ? styles.menuMobile : styles.links_list} ${
+            mobileMenu && styles.menuMobileActive
+          }`}
+        >
           <li>
-            <button onClick={logout}>Sair</button>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? styles.active : "")}
+            >
+              Home
+            </NavLink>
           </li>
-        )}
-      </ul>
-    </nav>
+          {!user && (
+            <>
+              <li>
+                <NavLink
+                  to="/login"
+                  className={({ isActive }) => (isActive ? styles.active : "")}
+                >
+                  Entrar
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/register"
+                  className={({ isActive }) => (isActive ? styles.active : "")}
+                >
+                  Cadastrar
+                </NavLink>
+              </li>
+            </>
+          )}
+          {user && (
+            <>
+              <li>
+                <NavLink
+                  to="/posts/create"
+                  className={({ isActive }) => (isActive ? styles.active : "")}
+                >
+                  Novo post
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard"
+                  className={({ isActive }) => (isActive ? styles.active : "")}
+                >
+                  Dashboard
+                </NavLink>
+              </li>
+            </>
+          )}
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? styles.active : "")}
+            >
+              Sobre
+            </NavLink>
+          </li>
+          {user && (
+            <li>
+              <NavLink to="/dashboard">
+                <span>@</span>
+                {user.displayName.toLowerCase()}
+              </NavLink>
+            </li>
+          )}
+          {user && (
+            <li>
+              <button onClick={logout}>Sair</button>
+            </li>
+          )}
+        </ul>
+      </nav>
+    </header>
   );
 };
 

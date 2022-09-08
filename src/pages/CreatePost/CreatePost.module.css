@@ -1,5 +1,10 @@
 .create_post {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.create_post h2 {
+  margin-bottom: 1rem;
 }
 
 .create_post p {
