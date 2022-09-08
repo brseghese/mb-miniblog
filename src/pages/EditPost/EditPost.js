@@ -127,7 +127,9 @@ const EditPost = () => {
                 />
               </label>
 
-              {!response.loading && <button className="btn">Editar</button>}
+              {!response.loading && (
+                <button className="btn btn-start">Editar</button>
+              )}
               {response.loading && (
                 <button className="btn" disabled>
                   Aguarde...

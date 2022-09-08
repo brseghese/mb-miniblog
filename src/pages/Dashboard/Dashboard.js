@@ -42,10 +42,10 @@ const Dashboard = () => {
             <div className={styles.post_row} key={post.id}>
               <p>{post.title}</p>
               <div className={styles.actions}>
-                <Link to={`/posts/${post.id}`} className="btn">
+                <Link to={`/posts/${post.id}`} className="btn btn-start">
                   Abrir
                 </Link>
-                <Link to={`/posts/edit/${post.id}`} className="btn">
+                <Link to={`/posts/edit/${post.id}`} className="btn btn-start">
                   Editar
                 </Link>
                 <button

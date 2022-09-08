@@ -29,7 +29,7 @@ const Home = () => {
           placeholder="Busque por tags..."
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button className="btn">Pesquisar</button>
+        <button className="btn btn-start">Pesquisar</button>
       </form>
       <div>
         {loading && <p>Carregando...</p>}
@@ -37,7 +37,7 @@ const Home = () => {
         {posts && posts.length === 0 && (
           <div className={styles.noposts}>
             <p>Não foram encotrados posts</p>
-            <Link to="/posts/create" className="btn">
+            <Link to="/posts/create" className="btn btn-start">
               Criar primeiro post
             </Link>
           </div>

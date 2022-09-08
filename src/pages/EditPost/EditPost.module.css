@@ -8,11 +8,12 @@
 }
 
 .edit_post p {
-  color: #aaa;
-  margin-bottom: 2em;
+  color: #444;
+  margin-bottom: 1em;
 }
 
 .preview_image {
   max-width: 50%;
   margin-bottom: 1rem;
+  border-radius: 10px;
 }

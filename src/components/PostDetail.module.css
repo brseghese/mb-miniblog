@@ -1,21 +1,17 @@
 .post_detail {
   margin-bottom: 4em;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 .post_detail img {
   margin-bottom: 0.5rem;
+  border-radius: 10px;
 }
 
 .post_detail h2 {
-  /* align-self: flex-start; */
   margin-bottom: 0.5rem;
 }
 
 .post_detail .tags {
-  /* align-self: flex-start; */
   display: flex;
   margin-bottom: 2em;
 }
@@ -30,15 +26,3 @@
   align-self: flex-start;
   margin-bottom: 0.5rem;
 }
-
-/* .post_detail a {
-  align-self: flex-start;
-} */
-
-/* .tags span {
-  font-weight: bold;
-} */
-
-/* .createdBy span {
-  font-weight: bold;
-} */

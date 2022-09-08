@@ -19,7 +19,7 @@ const PostDetail = ({ post }) => {
           </p>
         ))}
       </div>
-      <Link to={`/posts/${post.id}`} className="btn">
+      <Link to={`/posts/${post.id}`} className="btn btn-start">
         Ler post
       </Link>
     </div>

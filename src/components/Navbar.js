@@ -20,7 +20,7 @@ const Navbar = () => {
     <header className={styles.header}>
       <nav className={styles.menu}>
         <NavLink to="/" className={styles.brand}>
-          <span>Blog</span>
+          <span>Blog</span>.dev
         </NavLink>
         {mobile && (
           <button

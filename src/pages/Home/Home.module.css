@@ -1,7 +1,7 @@
 .search_form {
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 2em;
 }
@@ -11,8 +11,7 @@
 }
 
 .search_form input {
-  align-self: flex-start;
-  width: 100%;
+  width: 60%;
 }
 
 .noposts {

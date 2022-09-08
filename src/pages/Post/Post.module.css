@@ -9,6 +9,7 @@
 
 .post_container img {
   margin-bottom: 1rem;
+  border-radius: 10px;
 }
 
 .post_container p {

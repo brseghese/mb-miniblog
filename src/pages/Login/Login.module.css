@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.login h2 {
+  margin-bottom: 2rem;
+}
+
 .login p {
-  color: #aaa;
+  color: #444;
+  margin-bottom: 2rem;
 }

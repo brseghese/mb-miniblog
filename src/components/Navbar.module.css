@@ -11,17 +11,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
-  background-color: #fff;
+  background-color: #222;
   height: 4rem;
 }
 
 .brand {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: #1a8918;
 }
 
 .brand span {
+  font-size: 1.2rem;
   font-weight: 900;
-  text-transform: uppercase;
 }
 
 .links_list {
@@ -36,13 +37,20 @@
 
 .links_list li a {
   padding: 0.5rem 1rem;
+  color: #1a8918;
+}
+
+.links_list button {
+  color: #1a8918;
+}
+
+.links_list li a:hover,
+.links_list button:hover {
+  font-weight: 900;
 }
 
 .active {
-  /* color: #222;
-  border-top: 1px solid #222;
-  padding: 0.5rem 1rem; */
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .mobileButton {

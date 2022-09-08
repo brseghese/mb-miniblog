@@ -4,10 +4,14 @@
 }
 
 .create_post h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .create_post p {
-  color: #aaa;
-  margin-bottom: 2em;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+form button {
+  margin-top: 1rem;
 }

@@ -5,13 +5,16 @@
   align-items: center;
 }
 
+.about h2 {
+  margin-bottom: 2rem;
+}
+
 .about p {
-  color: #aaa;
+  color: #444;
   margin-bottom: 2em;
 }
 
 .about a {
   display: block;
-  margin-top: 15px;
   padding: 10px 15px;
 }
