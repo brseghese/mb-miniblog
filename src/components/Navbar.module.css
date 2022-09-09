@@ -46,7 +46,7 @@
 
 .links_list li a:hover,
 .links_list button:hover {
-  font-weight: 900;
+  text-shadow: 1px 0px 2px #1a8918;
 }
 
 .active {
@@ -100,7 +100,7 @@
 
 .menuMobile li a:hover,
 .menuMobile button:hover {
-  font-weight: 900;
+  text-shadow: 1px 0px 2px #1a8918;
 }
 
 .menuMobile li {
