@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+<h1 align="center" id="topo">Mini Blog</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+<img width='600px' src="./mockup.png" width="35px"/>
+</div>
 
-## Available Scripts
+### 💻 Projeto
 
-In the project directory, you can run:
+Mini Blog é um projeto proposto no curso de React JS do Zero a Maestria do professor Matheus Battisti.
 
-### `npm start`
+Neste projeto personalizei o design e trabalhei na responsividade.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔧 Ferramentas
 
-### `npm test`
+O projeto foi desenvolvido com as seguintes ferramentas:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 🧪 Tecnologias
 
-### `npm run build`
+- [React.js](https://pt-br.reactjs.org/)
+- [Firebase](https://firebase.google.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 📚 Dependências
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React-Router-DOM](https://reactrouter.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 🚀 ​ [Clique aqui](https://mb-miniblog.netlify.app/)🔗 e veja a aplicação no ar.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ​👷‍♂️​ Acessar o Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<a href="https://github.com/brseghese/mb-miniblog/tree/main">Acesse aqui</a>🔗 o código fonte pelo GitHub.
 
-## Learn More
+Faça o <a href="https://github.com/brseghese/mb-miniblog/archive/refs/heads/main.zip">Download aqui</a>🔗 do código fonte no formato zip.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone o repositório:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+git clone https://github.com/brseghese/mb-miniblog.git
+```
 
-### Code Splitting
+Entre na pasta do projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+cd mb-miniblog
+```
 
-### Analyzing the Bundle Size
+Instale as dependências:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+npm install
+```
 
-### Making a Progressive Web App
+Execute a aplicação:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+npm run start
+```
 
-### Advanced Configuration
+Abra http://localhost:3000 no seu navegador para ver a aplicação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Esse projeto é licenciado pela MIT License. Clique [aqui](https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT)🔗 para mais detalhes.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ✒️ Autor
+
+<a href="https://github.com/brseghese"> <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80193824?v=4" width="100px;" alt="Personal photo"/> </a>
+
+[Clique aqui](https://brseghese.github.io)🔗 e acesse meu portfólio! 💼 (em construção...)
+
+---
+
+#### 💬 Sinta-se a vontade para entrar em contato
+
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brunoseghese/) [![Github Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brseghese) [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brseghese@gmail.com)
+
+---
+
+> Desenvolvido com ❤️ por **Bruno Seghese**
+
+---
